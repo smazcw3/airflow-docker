@@ -1,0 +1,25 @@
+# IDE
+.idea/
+
+# Python
+*.py[cod]
+__pycache__/
+.ipynb_checkpoints
+
+# Venv
+.venv/
+.env
+
+# System
+.DS_Store
+
+#Distibution / packaging
+build/
+
+# Pip
+*.egg-info
+dist/
+
+# Testing
+.pytest_cache/
+.coverage
