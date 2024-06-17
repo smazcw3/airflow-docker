@@ -21,3 +21,14 @@ Installing Apache Airflow via Docker
 With this command, docker installs airflow within it. To check, open a web browser and go to `localhost:8080` and you will see something like below:
 
 ![alt text](images/airflow-login.png "Airflow login page")
+
+3. Login through the airflow page using the following credentials:
+	~~~
+	Username : airflow
+	Password : airflow
+	~~~
+
+4. Once you have logged in, the following page would be displayed
+
+![alt text](images/airflow-login2.png "Airflow login page")
+![alt text](images/airflow-login3.png "Airflow login page")
