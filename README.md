@@ -9,9 +9,14 @@ Installing Apache Airflow via Docker
 	AIRFLOW_UID=50000
 	~~~
 
-2. Open the terminal and go that folder, and type `docker-compose up -d`
+2. Open the terminal and go that folder, and type `docker-compose up -d`.
 
     ![alt text](images/docker-airflow.png "Installing airflow through docker")
+
+	There will be some additional folders that would be created as shown below:
+
+	![alt text](images/docker-airflow2.png "Airflow through docker")
+
 
 With this command, docker installs airflow within it. To check, open a web browser and go to `localhost:8080` and you will see something like below:
 
