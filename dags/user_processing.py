@@ -3,11 +3,11 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.python import PythonOperator
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 from pandas import json_normalize
 import json
 from datetime import datetime
-
 
 def _process_user(ti):
     """
@@ -26,6 +26,12 @@ def _process_user(ti):
     })
     processed_user.to_csv('/tmp/processed_user.csv', index=None, header=False)
 
+def _store_user():
+    hook = PostgresHook(postgres_conn_id="postgres")
+    hook.copy_expert(
+        sql="COPY users FROM stdin WITH DELIMITER as ','",
+        filename="/tmp/processed_user.csv"
+    )
 
 # Define the DAG
 with DAG('user_processing', start_date=datetime(2024, 1, 1), 
@@ -82,15 +88,27 @@ with DAG('user_processing', start_date=datetime(2024, 1, 1),
     process_user = PythonOperator(task_id="process_user", 
                                   python_callable=_process_user
                                  )
-     
+
 
     '''
     Make sure that extract_user task run is preceded by process_user
-    which is why we can add dependencies as shown below
-    '''
+    which is why we can add dependencies as
+    
     extract_user >> process_user
+    '''
 
-
-
+    '''
+    Lets make use of hooks. A hook is used for interacting with external tools. 
+    An operator makes use of external tool or service through hooks. 
+    For example, if we have a Postgres operator then it can interact with a Postgres database by running an SQL query through a Postgres "hook".
+    The purpose, here for the hook it to abstract all the complexities of interacting with a postgres database.
+    '''
+    store_user = PythonOperator(task_id="store_user", 
+                                python_callable=_store_user
+                               )
+    '''
+    Now, its time to declare all the dependencies within tasks
+    '''
+    create_table >> is_api_available >> extract_user >> process_user >> store_user
     
 
