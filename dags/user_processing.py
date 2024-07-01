@@ -38,7 +38,9 @@ with DAG('user_processing', start_date=datetime(2024, 1, 1),
          schedule_interval='@daily', catchup=False) as dag:
     '''
     A DAG consists of tasks and those tasks are defined as operators
-    An operator is one task in our data pipeline
+    An operator is one task in our data pipeline.
+    @param schedule_interval: It defined how a DAG should run from the start_date + schedule_time 
+
     There are 3 types of operator:
     1. Action operator: Executes an action
     2. Transfer operator: Transfer data
@@ -66,7 +68,6 @@ with DAG('user_processing', start_date=datetime(2024, 1, 1),
     We can now think of creating sensors. A sensor waits for something to happen before moving to the next task 
     For example, we can check whether an API is available or not and for that we can create an HTTPSensor
     '''
-
     is_api_available = HttpSensor(task_id="is_api_available",
                                   http_conn_id="user_api",
                                   endpoint="api/"
@@ -110,5 +111,3 @@ with DAG('user_processing', start_date=datetime(2024, 1, 1),
     Now, its time to declare all the dependencies within tasks
     '''
     create_table >> is_api_available >> extract_user >> process_user >> store_user
-    
-

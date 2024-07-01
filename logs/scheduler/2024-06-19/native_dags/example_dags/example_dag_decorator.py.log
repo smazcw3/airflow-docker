@@ -1519,3 +1519,21 @@
 [2024-06-19T23:58:29.096+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:29.096+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2024-06-19T23:58:29.116+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:29.116+0000] {dag.py:3340} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
 [2024-06-19T23:58:29.134+0000] {processor.py:176} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py took 0.147 seconds
+[2024-06-19T23:58:59.497+0000] {processor.py:154} INFO - Started process (PID=10669) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:58:59.498+0000] {processor.py:756} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2024-06-19T23:58:59.499+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:59.499+0000] {dagbag.py:537} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:58:59.516+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:59.516+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator
+[2024-06-19T23:58:59.517+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:59.516+0000] {taskmixin.py:205} WARNING - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator
+[2024-06-19T23:58:59.531+0000] {processor.py:766} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:58:59.621+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:59.621+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-06-19T23:58:59.645+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:58:59.645+0000] {dag.py:3340} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2024-06-19T23:58:59.667+0000] {processor.py:176} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py took 0.174 seconds
+[2024-06-19T23:59:30.061+0000] {processor.py:154} INFO - Started process (PID=10725) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:59:30.062+0000] {processor.py:756} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2024-06-19T23:59:30.063+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:59:30.063+0000] {dagbag.py:537} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:59:30.077+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:59:30.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator
+[2024-06-19T23:59:30.077+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:59:30.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator
+[2024-06-19T23:59:30.088+0000] {processor.py:766} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-19T23:59:30.157+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:59:30.157+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-06-19T23:59:30.176+0000] {logging_mixin.py:120} INFO - [2024-06-19T23:59:30.176+0000] {dag.py:3340} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2024-06-19T23:59:30.194+0000] {processor.py:176} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_dag_decorator.py took 0.136 seconds

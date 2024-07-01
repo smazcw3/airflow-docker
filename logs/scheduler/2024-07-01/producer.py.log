@@ -1,0 +1,579 @@
+[2024-07-01T17:04:48.988+0000] {processor.py:154} INFO - Started process (PID=42) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:04:48.990+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:04:48.991+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:04:48.991+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:04:49.028+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:04:49.023+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:04:49.029+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:04:49.059+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.077 seconds
+[2024-07-01T17:05:20.034+0000] {processor.py:154} INFO - Started process (PID=120) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:05:20.035+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:05:20.036+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:05:20.036+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:05:20.056+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:05:20.054+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:05:20.058+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:05:20.078+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.048 seconds
+[2024-07-01T17:05:50.369+0000] {processor.py:154} INFO - Started process (PID=187) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:05:50.370+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:05:50.371+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:05:50.371+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:05:50.386+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:05:50.385+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:05:50.387+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:05:50.404+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.037 seconds
+[2024-07-01T17:06:21.061+0000] {processor.py:154} INFO - Started process (PID=245) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:06:21.062+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:06:21.063+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:21.063+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:21.079+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:21.078+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:06:21.080+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:21.098+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:06:25.323+0000] {processor.py:154} INFO - Started process (PID=285) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:06:25.324+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:06:25.325+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:25.325+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:25.342+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:25.340+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:06:25.343+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:25.359+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:06:55.516+0000] {processor.py:154} INFO - Started process (PID=349) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:06:55.517+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:06:55.518+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:55.517+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:55.536+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:06:55.534+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:06:55.536+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:06:55.555+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.044 seconds
+[2024-07-01T17:07:12.412+0000] {processor.py:154} INFO - Started process (PID=370) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:07:12.413+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:07:12.414+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:07:12.414+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:07:12.431+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:07:12.429+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:07:12.432+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:07:12.449+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:07:42.630+0000] {processor.py:154} INFO - Started process (PID=437) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:07:42.631+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:07:42.632+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:07:42.632+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:07:42.648+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:07:42.646+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:07:42.649+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:07:42.665+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:08:13.245+0000] {processor.py:154} INFO - Started process (PID=504) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:08:13.246+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:08:13.246+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:13.246+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:13.262+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:13.261+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:08:13.263+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:13.281+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:08:21.295+0000] {processor.py:154} INFO - Started process (PID=505) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:08:21.296+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:08:21.297+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:21.297+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:21.314+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:21.313+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:08:21.314+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:21.331+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.039 seconds
+[2024-07-01T17:08:52.013+0000] {processor.py:154} INFO - Started process (PID=572) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:08:52.014+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:08:52.015+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:52.015+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:52.031+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:08:52.030+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:08:52.031+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:08:52.049+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.038 seconds
+[2024-07-01T17:09:22.737+0000] {processor.py:154} INFO - Started process (PID=639) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:09:22.737+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:09:22.738+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:09:22.738+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:09:22.753+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:09:22.752+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:09:22.753+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:09:22.770+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.037 seconds
+[2024-07-01T17:09:53.481+0000] {processor.py:154} INFO - Started process (PID=707) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:09:53.482+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:09:53.483+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:09:53.483+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:09:53.500+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:09:53.498+0000] {dagbag.py:439} ERROR - Failed to bag_dag: /opt/airflow/dags/producer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 88, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 166, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 778, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 624, in _expand
+    raise CroniterBadCronError(cls.bad_length)
+croniter.croniter.CroniterBadCronError: Exactly 5 or 6 columns has to be specified for iterator expression.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 436, in _process_modules
+    dag.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 653, in validate
+    self.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/_cron.py", line 90, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: Exactly 5 or 6 columns has to be specified for iterator expression.
+[2024-07-01T17:09:53.500+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:09:53.518+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.041 seconds
+[2024-07-01T17:10:10.096+0000] {processor.py:154} INFO - Started process (PID=756) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:10:10.097+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:10:10.098+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.098+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:10:10.122+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:10:10.258+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.258+0000] {manager.py:507} INFO - Created Permission View: can edit on DAG:producer
+[2024-07-01T17:10:10.266+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.266+0000] {manager.py:507} INFO - Created Permission View: can delete on DAG:producer
+[2024-07-01T17:10:10.272+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.272+0000] {manager.py:507} INFO - Created Permission View: can read on DAG:producer
+[2024-07-01T17:10:10.272+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.272+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:10:10.285+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.285+0000] {dag.py:2606} INFO - Creating ORM DAG for producer
+[2024-07-01T17:10:10.297+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:10.297+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:10:10.317+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.225 seconds
+[2024-07-01T17:10:40.901+0000] {processor.py:154} INFO - Started process (PID=823) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:10:40.902+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:10:40.903+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:40.903+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:10:40.921+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:10:40.954+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:40.954+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:10:40.976+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:10:40.976+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:10:40.994+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.095 seconds
+[2024-07-01T17:11:11.687+0000] {processor.py:154} INFO - Started process (PID=890) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:11:11.688+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:11:11.688+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:11.688+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:11:11.709+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:11:11.742+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:11.742+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:11:11.765+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:11.765+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:11:11.784+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:11:42.354+0000] {processor.py:154} INFO - Started process (PID=948) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:11:42.355+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:11:42.356+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:42.356+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:11:42.374+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:11:42.408+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:42.407+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:11:42.429+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:11:42.429+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:11:42.447+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.096 seconds
+[2024-07-01T17:12:13.058+0000] {processor.py:154} INFO - Started process (PID=1015) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:12:13.059+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:12:13.060+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:13.060+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:12:13.079+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:12:13.113+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:13.113+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:12:13.134+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:13.134+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:12:13.153+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.098 seconds
+[2024-07-01T17:12:43.532+0000] {processor.py:154} INFO - Started process (PID=1082) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:12:43.533+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:12:43.534+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:43.534+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:12:43.554+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:12:43.588+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:43.587+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:12:43.611+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:12:43.611+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:12:43.633+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.104 seconds
+[2024-07-01T17:13:14.049+0000] {processor.py:154} INFO - Started process (PID=1148) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:13:14.050+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:13:14.051+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:14.051+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:13:14.072+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:13:14.108+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:14.107+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:13:14.129+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:14.129+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:13:14.147+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:13:44.813+0000] {processor.py:154} INFO - Started process (PID=1215) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:13:44.814+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:13:44.815+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:44.815+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:13:44.835+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:13:44.871+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:44.871+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:13:44.895+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:13:44.895+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:13:44.914+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.104 seconds
+[2024-07-01T17:14:15.464+0000] {processor.py:154} INFO - Started process (PID=1273) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:14:15.465+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:14:15.466+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:15.466+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:14:15.485+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:14:15.518+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:15.518+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:14:15.540+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:15.540+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:14:15.559+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.097 seconds
+[2024-07-01T17:14:45.957+0000] {processor.py:154} INFO - Started process (PID=1339) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:14:45.958+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:14:45.959+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:45.959+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:14:45.978+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:14:46.011+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:46.011+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:14:46.035+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:14:46.035+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:14:46.053+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.098 seconds
+[2024-07-01T17:15:16.729+0000] {processor.py:154} INFO - Started process (PID=1406) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:15:16.730+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:15:16.730+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:16.730+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:15:16.749+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:15:16.784+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:16.784+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:15:16.807+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:16.807+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:15:16.826+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:15:47.226+0000] {processor.py:154} INFO - Started process (PID=1473) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:15:47.227+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:15:47.227+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:47.227+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:15:47.247+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:15:47.282+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:47.282+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:15:47.305+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:15:47.305+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:15:47.323+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:16:17.951+0000] {processor.py:154} INFO - Started process (PID=1531) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:16:17.952+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:16:17.953+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:17.953+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:17.971+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:18.003+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:18.003+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:16:18.032+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:18.032+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:16:18.051+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.103 seconds
+[2024-07-01T17:16:27.028+0000] {processor.py:154} INFO - Started process (PID=1541) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:16:27.029+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:16:27.030+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:27.029+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:27.052+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:27.085+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:27.085+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:16:27.109+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:27.109+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-06-30T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-07-01T17:16:27.128+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.103 seconds
+[2024-07-01T17:16:57.802+0000] {processor.py:154} INFO - Started process (PID=1608) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:16:57.803+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:16:57.804+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:57.803+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:57.823+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:16:57.857+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:57.856+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:16:57.881+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:16:57.881+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:16:57.899+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:17:28.510+0000] {processor.py:154} INFO - Started process (PID=1675) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:17:28.511+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:17:28.511+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:28.511+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:17:28.531+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:17:28.567+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:28.567+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:17:28.591+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:28.591+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:17:28.609+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.102 seconds
+[2024-07-01T17:17:59.154+0000] {processor.py:154} INFO - Started process (PID=1742) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:17:59.155+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:17:59.156+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:59.156+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:17:59.177+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:17:59.213+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:59.213+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:17:59.239+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:17:59.239+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:17:59.258+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.106 seconds
+[2024-07-01T17:18:29.837+0000] {processor.py:154} INFO - Started process (PID=1800) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:18:29.838+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:18:29.838+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:29.838+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:18:29.858+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:18:29.893+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:29.893+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:18:29.918+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:29.917+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:18:29.936+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.103 seconds
+[2024-07-01T17:18:49.566+0000] {processor.py:154} INFO - Started process (PID=1858) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:18:49.567+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:18:49.567+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:49.567+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:18:49.591+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:18:49.630+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:49.630+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:18:49.658+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:18:49.657+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:18:49.679+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.116 seconds
+[2024-07-01T17:19:20.394+0000] {processor.py:154} INFO - Started process (PID=1925) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:19:20.395+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:19:20.396+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:20.396+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:20.419+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:20.455+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:20.455+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:19:20.478+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:20.477+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:19:20.496+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.105 seconds
+[2024-07-01T17:19:23.514+0000] {processor.py:154} INFO - Started process (PID=1926) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:19:23.515+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:19:23.516+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:23.515+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:23.538+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:23.603+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:23.603+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:19:23.623+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:23.623+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:19:23.649+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.138 seconds
+[2024-07-01T17:19:34.587+0000] {processor.py:154} INFO - Started process (PID=1936) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:19:34.588+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:19:34.588+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:34.588+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:34.614+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:19:34.637+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:34.637+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:19:34.664+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:19:34.664+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:19:34.689+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.105 seconds
+[2024-07-01T17:20:05.443+0000] {processor.py:154} INFO - Started process (PID=2005) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:20:05.444+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:20:05.445+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:05.445+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:20:05.466+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:20:05.501+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:05.501+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:20:05.526+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:05.526+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:20:05.547+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.107 seconds
+[2024-07-01T17:20:35.739+0000] {processor.py:154} INFO - Started process (PID=2072) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:20:35.740+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:20:35.740+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:35.740+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:20:35.761+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:20:35.798+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:35.798+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:20:35.822+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:20:35.822+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:20:35.840+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.104 seconds
+[2024-07-01T17:21:06.160+0000] {processor.py:154} INFO - Started process (PID=2129) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:21:06.161+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:21:06.161+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:06.161+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:21:06.180+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:21:06.213+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:06.212+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:21:06.235+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:06.235+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:21:06.254+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.097 seconds
+[2024-07-01T17:21:36.660+0000] {processor.py:154} INFO - Started process (PID=2196) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:21:36.661+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:21:36.662+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:36.662+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:21:36.681+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:21:36.715+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:36.715+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:21:36.738+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:21:36.738+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:21:36.757+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:22:07.212+0000] {processor.py:154} INFO - Started process (PID=2264) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:22:07.213+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:22:07.213+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:07.213+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:22:07.235+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:22:07.268+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:07.268+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:22:07.290+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:07.290+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:22:07.309+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.100 seconds
+[2024-07-01T17:22:37.771+0000] {processor.py:154} INFO - Started process (PID=2331) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:22:37.772+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:22:37.772+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:37.772+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:22:37.794+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:22:37.828+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:37.828+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:22:37.851+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:22:37.851+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:22:37.869+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.102 seconds
+[2024-07-01T17:23:08.656+0000] {processor.py:154} INFO - Started process (PID=2398) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:23:08.657+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:23:08.658+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:08.657+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:23:08.678+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:23:08.713+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:08.713+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:23:08.738+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:08.738+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:23:08.758+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.107 seconds
+[2024-07-01T17:23:39.486+0000] {processor.py:154} INFO - Started process (PID=2456) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:23:39.487+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:23:39.488+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:39.487+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:23:39.508+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:23:39.542+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:39.542+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:23:39.565+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:23:39.565+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:23:39.585+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.101 seconds
+[2024-07-01T17:24:10.446+0000] {processor.py:154} INFO - Started process (PID=2523) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:24:10.446+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:24:10.447+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:10.447+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:24:10.469+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:24:10.504+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:10.504+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:24:10.528+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:10.528+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:24:10.549+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.106 seconds
+[2024-07-01T17:24:41.096+0000] {processor.py:154} INFO - Started process (PID=2590) to work on /opt/airflow/dags/producer.py
+[2024-07-01T17:24:41.097+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/producer.py for tasks to queue
+[2024-07-01T17:24:41.098+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:41.098+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/producer.py
+[2024-07-01T17:24:41.120+0000] {processor.py:766} INFO - DAG(s) dict_keys(['producer']) retrieved from /opt/airflow/dags/producer.py
+[2024-07-01T17:24:41.158+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:41.158+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-07-01T17:24:41.185+0000] {logging_mixin.py:120} INFO - [2024-07-01T17:24:41.185+0000] {dag.py:3340} INFO - Setting next_dagrun for producer to 2024-07-01T00:00:00+00:00, run_after=2024-07-02T00:00:00+00:00
+[2024-07-01T17:24:41.206+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/producer.py took 0.113 seconds
