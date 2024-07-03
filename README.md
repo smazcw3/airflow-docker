@@ -30,3 +30,10 @@ With this command, docker installs airflow within it. To check, open a web brows
 4. Once you have logged in, the following page would be displayed
 ![alt text](images/airflow-login2.png "Airflow login page")
 ![alt text](images/airflow-login3.png "Airflow login page")
+
+
+Important Notes
+---------------
+
++ We can monitor tasks with Flower. In order to access Flower, we have to do `docker-compose down && docker-compose --profile flower up -d`. To check, open a web browser and go to `localhost:5555`
++ We can restart airflow through docker by `docker-compose down && docker-compose up -d`
