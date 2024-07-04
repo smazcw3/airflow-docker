@@ -34,7 +34,8 @@ With this command, docker installs airflow within it. To check, open a web brows
 
 Important Notes
 ---------------
-
++ Docker Compose (`docker-compose`) is used to run multiple containers as a single service. For example, suppose you had an application which required NGNIX and MySQL, you could create one file which would start both the containers as a service without the need to start each one separately.
++ We can run the docker-compose file using `docker-compose -f {compose file name} up`
 + We can monitor tasks with Flower. In order to access Flower, we have to do `docker-compose down && docker-compose --profile flower up -d`. To check, open a web browser and go to `localhost:5555`
 + We can restart airflow through docker by `docker-compose down && docker-compose up -d`
 + `docker ps` lists all running containers in docker engine. 
