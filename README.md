@@ -1,3 +1,9 @@
+Introduction
+------------
+**Apache Airflow** is an open-source platform for authoring, scheduling and monitoring data and computing workflows. Airflow is the de-facto standard for defining ETL/ELT pipelines as Python code.
+
+**Docker** is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime.
+
 Installing Apache Airflow via Docker
 ------------------------------------
 1. Create a folder, for e.g. `airflow-docker`. Within the folder, download the docker compose file from [here](https://airflow.apache.org/docs/apache-airflow/2.5.1/docker-compose.yaml) and save it as `docker-compose.yaml`.
