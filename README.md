@@ -45,10 +45,10 @@ Important Notes
 + We can monitor tasks with Flower. In order to access Flower, we have to do `docker-compose down && docker-compose --profile flower up -d`. To check, open a web browser and go to `localhost:5555`
 + We can restart airflow through docker by `docker-compose down && docker-compose up -d`
 + `docker ps` lists all running containers in docker engine. 
-+ `docker-compose ps` lists containers related to images declared in docker-compose file 
++ `docker-compose ps` lists containers related to images declared in docker-compose file.
++ **Docker Vs Kubernets** -- Docker is a container technology that helps create an isolated environment for applications while Kubernetes is a container orchestration platform that manages the cluster of multiple containers.
 
 Airflow has several parameters to tune your tasks and DAGs concurrency. Starting from the configuration settings
-
 + parallelism / AIRFLOW__CORE__PARALELISM
 	- This defines the maximum number of task instances that can run in Airflow per scheduler. By default, you can execute up to 32 tasks at the same time. If you have 2 schedulers: 2 x 32 = 64 tasks.
 	- What value to define here depends on the resources you have and the number of schedulers running.
