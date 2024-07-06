@@ -59,3 +59,20 @@ Airflow has several parameters to tune your tasks and DAGs concurrency. Starting
 
 + max_active_runs_per_dag / AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG
 	- This defines the maximum number of active DAG runs per DAG. By default, you can have up to 16 DAG runs per DAG running at the same time.
+
+
+Trigger rules for task dependecies:
+-----------------------------------
+`all_success` - All the upstream tasks needs to be successful in order for the downstream tasks to be succeeded.
+
+`all_failed` - If all the upstream tasks failed, then the downstream task is triggered. If one of the upstream task gets succeeded, then downstream task is skipped.
+
+`all_done` - The downstream task gets triggered regardless of the success or skipping of the upstream tasks.
+
+`one_success` - The downstream task gets triggered as soon as one of the immediate previous upstream tasks gets succeeded.
+
+`one_failed` - The downstream task gets triggered as soon as the immediate previous upstream tasks gets skipped.
+
+`none_failed` - The downstream task gets triggered as soon as the all the immediate previous upstream tasks gets succeeded or skipped.
+
+`none_failed_min_one_success` - The downstream task gets triggered if one of the immediate previous upstream tasks gets succeeded and others have skipped.
