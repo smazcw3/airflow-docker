@@ -1,8 +1,10 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.subdag import SubDagOperator
-from subdags.subdag_downloads import subdag_downloads
-from subdags.subdag_transforms import subdag_transforms
+#from subdags.subdag_downloads import subdag_downloads
+#from subdags.subdag_transforms import subdag_transforms
+from groups.group_downloads import download_tasks
+from groups.group_transforms import transform_tasks
  
 from datetime import datetime
  
@@ -11,10 +13,13 @@ with DAG('group_dag', start_date=datetime(2022, 1, 1),
 
     args = {'start_date': dag.start_date, 'schedule_interval': dag.schedule_interval, 'catchup': dag.catchup}
  
-    ## We can group the download tasks into one "downloads" task
-    downloads = SubDagOperator(
-        task_id='downloads', 
-        subdag=subdag_downloads(dag.dag_id, 'downloads', args))
+    ## We can group the download tasks into the "downloads" task using TaskGoup instead of Subdags
+    downloads = download_tasks()
+
+    # ## We can group the download tasks into one "downloads" task
+    # downloads = SubDagOperator(
+    #     task_id='downloads', 
+    #     subdag=subdag_downloads(dag.dag_id, 'downloads', args))
 
     # download_a = BashOperator(
     #     task_id='download_a',
@@ -36,11 +41,15 @@ with DAG('group_dag', start_date=datetime(2022, 1, 1),
         bash_command='sleep 10'
     )
  
-    ## We can group the transform tasks into one "tranforms" task
-    transforms = SubDagOperator(
-        task_id='transforms',
-        subdag=subdag_transforms(dag.dag_id, 'transforms', args)
-    )
+
+    ## We can group the transforms tasks into the "tansforms" task using TaskGoup instead of Subdags
+    transforms = transform_tasks()
+
+    # ## We can group the transform tasks into one "tranforms" task
+    # transforms = SubDagOperator(
+    #     task_id='transforms',
+    #     subdag=subdag_transforms(dag.dag_id, 'transforms', args)
+    # )
 
     # transform_a = BashOperator(
     #     task_id='transform_a',
