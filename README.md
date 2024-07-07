@@ -76,3 +76,8 @@ Trigger rules for task dependecies:
 `none_failed` - The downstream task gets triggered as soon as the all the immediate previous upstream tasks gets succeeded or skipped.
 
 `none_failed_min_one_success` - The downstream task gets triggered if one of the immediate previous upstream tasks gets succeeded and others have skipped.
+
+References
+----------
++ https://pythonspeed.com/articles/distributing-software/
++ https://www.kdnuggets.com/2023/07/docker-tutorial-data-scientists.html
