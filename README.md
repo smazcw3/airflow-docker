@@ -44,10 +44,14 @@ Important Notes
 + We can run the docker-compose file using `docker compose -f {compose file name} up`
 + We can monitor tasks with Celery Flower. Celery Flower is a web-based monitoring tool for Celery, a distributed task queue for Python. It provides a visual interface for monitoring and managing Celery clusters, allowing users to view task progress, task history, and worker status in real-time.
 In order to access Flower, we have to do `docker compose down && docker compose --profile flower up -d`. To check, open a web browser and go to `localhost:5555`
-+ We can restart airflow through docker by `docker compose down && docker compose up -d`
-+ `docker ps` lists all running containers in docker engine. 
++ We can restart airflow instance through docker by `docker compose down && docker compose up -d`
++ Run the airlfow with elastic search instance by `docker compose -f docker-compose-es.yaml up -d`
++ To stop and restart airflow with elastic search instance, use `docker compose -f docker-compose-es.yaml stop && docker compose -f docker-compose-es.yaml up -d`
++ We can go inside the bash session of any container. For e.g. use `docker exec -it airflow-docker-airflow-scheduler-1 /bin/bash` where `airflow-docker-airflow-scheduler-1` is the container name.
++ `docker ps` lists all running containers in docker engine.
 + `docker compose ps` lists containers related to images declared in docker-compose file.
 + **Docker Vs Kubernets** -- Docker is a container technology that helps create an isolated environment for applications while Kubernetes is a container orchestration platform that manages the cluster of multiple containers.
++ **ElasticSearch** -- Elastic search is the search engine for our data. Basically, with elastic search, we are able to search, analyze and visualize our data.
 
 Airflow has several parameters to tune your tasks and DAGs concurrency. Starting from the configuration settings
 + parallelism / AIRFLOW__CORE__PARALELISM
@@ -59,6 +63,8 @@ Airflow has several parameters to tune your tasks and DAGs concurrency. Starting
 
 + max_active_runs_per_dag / AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG
 	- This defines the maximum number of active DAG runs per DAG. By default, you can have up to 16 DAG runs per DAG running at the same time.
+
++ Hook is an interface that encapsulates the complexity of interacting with an external system.
 
 
 Trigger rules for task dependecies:
@@ -81,3 +87,4 @@ References
 ----------
 + https://pythonspeed.com/articles/distributing-software/
 + https://www.kdnuggets.com/2023/07/docker-tutorial-data-scientists.html
++ https://docs.docker.com/guides/workshop/08_using_compose/
