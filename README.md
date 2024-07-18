@@ -88,3 +88,4 @@ References
 + https://pythonspeed.com/articles/distributing-software/
 + https://www.kdnuggets.com/2023/07/docker-tutorial-data-scientists.html
 + https://docs.docker.com/guides/workshop/08_using_compose/
++ https://marclamberti.com/blog/variables-with-apache-airflow/
