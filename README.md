@@ -67,6 +67,18 @@ Airflow has several parameters to tune your tasks and DAGs concurrency. Starting
 + Hook is an interface that encapsulates the complexity of interacting with an external system.
 
 
+Operators
+---------
+Operators are the building blocks of Airflow DAGs. They contain the logic of how data is processed in a pipeline. Each task in a DAG is defined by instantiating an operator. An operator describes a single task of the workflow. 
+
+Some of the common used operators are:
++ BashOperator 
++ PythonOperator 
++ EmailOperator
++ MySqlOperator
++ DockerOperator
+
+
 Trigger rules for task dependecies:
 -----------------------------------
 `all_success` - All the upstream tasks needs to be successful in order for the downstream tasks to be succeeded.
@@ -89,3 +101,5 @@ References
 + https://www.kdnuggets.com/2023/07/docker-tutorial-data-scientists.html
 + https://docs.docker.com/guides/workshop/08_using_compose/
 + https://marclamberti.com/blog/variables-with-apache-airflow/
++ https://marclamberti.com/blog/how-to-use-dockeroperator-apache-airflow/
++ https://www.astronomer.io/docs/learn/what-is-an-operator
