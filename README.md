@@ -55,9 +55,9 @@ In order to access Flower, we have to do `docker compose down && docker compose 
 
 + We can go inside the bash session of any container. For e.g. use `docker exec -it airflow-docker-airflow-scheduler-1 /bin/bash` where `airflow-docker-airflow-scheduler-1` is the container name.
 
-+ `docker ps` lists all running containers in docker engine.
++ Lists all running containers in docker engine using `docker ps`
 
-+ `docker compose ps` lists containers related to images declared in docker-compose file.
++ Lists containers related to images declared in docker-compose file using `docker compose ps`
 
 + **Docker Vs Kubernets** -- Docker is a container technology that helps create an isolated environment for applications while Kubernetes is a container orchestration platform that manages the cluster of multiple containers.
 
@@ -115,3 +115,4 @@ References
 + https://marclamberti.com/blog/variables-with-apache-airflow/
 + https://marclamberti.com/blog/how-to-use-dockeroperator-apache-airflow/
 + https://www.astronomer.io/docs/learn/what-is-an-operator
++ https://medium.com/nerd-for-tech/airflow-catchup-backfill-demystified-355def1b6f92 (Airflow catchup Vs Backfill)
